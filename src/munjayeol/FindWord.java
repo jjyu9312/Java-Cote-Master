@@ -26,7 +26,7 @@ public class FindWord {
         System.out.println(str);
         t = Character.toUpperCase(t);
 
-         1.
+//         1.
 //        for(int i = 0; i < str.length(); i++) {
 //            if (str.charAt(i) == t) { // 문자를 1개씩 인덱스로 접근
 //                answer ++;
