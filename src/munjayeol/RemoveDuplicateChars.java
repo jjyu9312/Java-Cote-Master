@@ -20,7 +20,7 @@ public class RemoveDuplicateChars {
     }
 
     public static void main(String[] args) {
-        RemoveDuplicateChars my = new RemoveDuplicateChars(); // 매서드 static이면 객체 생성 필요 없음.
+        RemoveDuplicateChars niam = new RemoveDuplicateChars(); // 매서드 static이면 객체 생성 필요 없음.
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
 
