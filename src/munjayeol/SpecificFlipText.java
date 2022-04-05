@@ -20,7 +20,7 @@ public class SpecificFlipText {
         return str;
     }
 
-    public String Solution(String str) {
+    public String solution(String str) {
         char[] s = str.toCharArray();
         int lt = 0, rt = str.length()-1;
 
@@ -50,7 +50,7 @@ public class SpecificFlipText {
 
 //        System.out.println(niam.mySolution(str));
         System.out.println("=====================");
-        System.out.println(niam.Solution(str));
+        System.out.println(niam.solution(str));
         System.out.println("=====================");
     }
 }
