@@ -33,7 +33,7 @@ public class FindWord {
 //            }
 //        }
 
-        // 2.
+        // 2번째 방법
         for(char x : str.toCharArray()) { // String의 문자를 분리하여 문자 배열을 생성
             if (x == t) answer ++;
         }
