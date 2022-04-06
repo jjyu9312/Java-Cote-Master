@@ -1,6 +1,4 @@
-package Aarray;
-
-import munjayeol.FindWord;
+package aarray;
 
 import java.util.Scanner;
 

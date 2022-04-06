@@ -1,6 +1,4 @@
-package Aarray;
-
-import munjayeol.SpecificFlipText;
+package aarray;
 
 import java.util.Scanner;
 
