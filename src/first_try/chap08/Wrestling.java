@@ -1,6 +1,4 @@
-package greedy;
-
-import stackandqueue.RemoveParentheses;
+package first_try.chap08;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -18,6 +16,8 @@ public class Wrestling {
                 cnt++; // 최대값 있을 때만 선발
             }
         }
+
+        return cnt;
     }
 
     public static void main(String[] args) {
@@ -32,7 +32,7 @@ public class Wrestling {
         }
 
         System.out.println("=====================");
-        System.out.println(niam.solution(str));
+        System.out.println(niam.solution(arr, n));
         System.out.println("=====================");
     }
 }

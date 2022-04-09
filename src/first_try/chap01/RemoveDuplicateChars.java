@@ -1,4 +1,4 @@
-package munjayeol;
+package first_try.chap01;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package aarray;
+package first_try.chap02;
 
 import java.util.ArrayList;
 import java.util.Scanner;
