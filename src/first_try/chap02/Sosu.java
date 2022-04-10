@@ -15,6 +15,8 @@ public class Sosu {
                 answer++;
                 for (int j = i; j < n; j=j+i) { // j는 i의 배수만큼 증가
                     ch[j] = 1;
+
+
                 }
             }
         }
