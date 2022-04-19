@@ -2,25 +2,25 @@ package first_try.chap03;
 
 import java.util.Scanner;
 
-public class MaxSales {
+public class ContinuousSubsequence {
 
     private int solution(int n, int m, int[] arr) {
-        int answer = 0, sum = 0;
+        int answer = 0;
 
-        for (int i = 0; i < m; i++) {
-            sum += arr[i];
-        }
-        answer = sum;
-        for (int i = m; i < n; i++) {
-            sum += (arr[i] - arr[i-m]);
-            answer = Math.max(answer, sum);
+        for (int i = 0; i < n; i++) {
+            int cnt = 0;
+            cnt += arr[i];
+            if (cnt == m) answer++;
+            if (cnt > m) {
+                cnt -= arr[i];
+            }
         }
 
         return answer;
     }
 
     public static void main(String[] args) {
-        MaxSales niam = new MaxSales(); // 매서드 static이면 객체 생성 필요 없음.
+        ContinuousSubsequence niam = new ContinuousSubsequence(); // 매서드 static이면 객체 생성 필요 없음.
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
