@@ -5,14 +5,15 @@ import java.util.Scanner;
 public class ContinuousSubsequence {
 
     private int solution(int n, int m, int[] arr) {
-        int answer = 0;
+        int answer = 0, sum = 0;
+        int lt = 0, rt = 0;
 
-        for (int i = 0; i < n; i++) {
-            int cnt = 0;
-            cnt += arr[i];
-            if (cnt == m) answer++;
-            if (cnt > m) {
-                cnt -= arr[i];
+        for (rt = 0; rt < n; rt++) {
+            sum += arr[rt];
+            if (sum == m) answer++;
+            while(sum >= m) {
+                sum -= arr[lt++];
+                if (sum == m) answer++;
             }
         }
 
