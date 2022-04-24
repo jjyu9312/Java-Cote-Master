@@ -31,6 +31,6 @@ public class AllSales {
         int k = sc .nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < arr.length; i++) arr[i] = sc.nextInt();
-        for (int x : niam.solution(n, k, arr)) System.out.print(x + "");
+        for (int x : niam.solution(n, k, arr)) System.out.print(x + " ");
     }
 }
