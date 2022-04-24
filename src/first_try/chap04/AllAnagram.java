@@ -1,5 +1,6 @@
 package first_try.chap04;
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 
@@ -13,10 +14,17 @@ public class AllAnagram {
     }
 
     private int solution(String ana1, String ana2) {
+        int answer = 0;
+        HashMap<Character, Integer> map = new HashMap<>();
+        HashMap<Character, Integer> map2 = new HashMap<>();
+        for (char c : ana1.toCharArray()) {
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+
+        for ()
 
 
-
-        return 0;
+        return answer;
     }
 
 }
