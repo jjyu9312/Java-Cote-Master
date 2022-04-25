@@ -21,8 +21,9 @@ public class AllAnagram {
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
 
-        for ()
+        for (int i = 0; i < ana2.length(); i++) {
 
+        }
 
         return answer;
     }
