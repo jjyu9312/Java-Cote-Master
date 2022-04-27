@@ -22,7 +22,7 @@ public class AllAnagram {
         }
 
         for (int i = 0; i < ana2.length(); i++) {
-            int p = 0;
+            int q = 0;
         }
 
         return answer;
