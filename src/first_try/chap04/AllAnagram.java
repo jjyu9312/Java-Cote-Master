@@ -15,14 +15,26 @@ public class AllAnagram {
 
     private int solution(String ana1, String ana2) {
         int answer = 0;
-        HashMap<Character, Integer> map = new HashMap<>();
-        HashMap<Character, Integer> map2 = new HashMap<>();
-        for (char c : ana1.toCharArray()) {
-            map.put(c, map.getOrDefault(c, 0) + 1);
+        HashMap<Character, Integer> anaMap = new HashMap<>();
+        HashMap<Character, Integer> ana2Map = new HashMap<>();
+
+        for (char x : ana2.toCharArray()) {
+            ana2Map.put(x, ana2Map.getOrDefault(x, 0) + 1);
         }
 
-        for (int i = 0; i < ana2.length(); i++) {
-            int x = 0;
+        int L = ana2.length() - 1;
+        for (int i = 0; i < L; i++) {
+            anaMap.put(ana1.charAt(i), anaMap.getOrDefault(ana1.charAt(i), 0) + 1);
+        }
+
+        int lt = 0;
+
+        for (int rt = L; rt < ana1.length(); rt++) {
+            anaMap.put(ana1.charAt(rt), anaMap.getOrDefault(ana1.charAt(rt), 0) + 1);
+            if (anaMap.equals(ana2Map)) answer++;
+            anaMap.put(ana1.charAt(lt), anaMap.get(ana1.charAt(lt)) - 1);
+            if (anaMap.get(ana1.charAt(lt)) == 0) anaMap.remove(ana1.charAt(lt));
+            lt++;
         }
 
         return answer;
