@@ -21,6 +21,7 @@ public class BigNumK {
             }
         }
 
+        // System.out.println(Tset.first()); // 내림차순으로 정렬했기에 가장 최대값이 나옴
         int cnt = 0;
         for (int i : Tset) {
             cnt++;
@@ -40,6 +41,7 @@ public class BigNumK {
         }
 
         System.out.println(niam.solution(n, k, arr));
+        System.out.println();
 
     }
 }
