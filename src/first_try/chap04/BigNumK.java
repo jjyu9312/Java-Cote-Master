@@ -41,7 +41,6 @@ public class BigNumK {
         }
 
         System.out.println(niam.solution(n, k, arr));
-        System.out.println();
 
     }
 }
