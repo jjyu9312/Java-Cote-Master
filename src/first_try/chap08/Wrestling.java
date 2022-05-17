@@ -31,9 +31,7 @@ public class Wrestling {
             arr.add(new Body(h, w));
         }
 
-        System.out.println("=====================");
         System.out.println(niam.solution(arr, n));
-        System.out.println("=====================");
     }
 }
 
