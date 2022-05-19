@@ -25,5 +25,6 @@ public class IronRod {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         System.out.println(niam.solution(str));
+        System.out.println();
     }
 }
