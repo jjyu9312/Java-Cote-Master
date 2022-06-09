@@ -1,5 +1,7 @@
 package first_try.chap05;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class MakeEdu {
@@ -12,6 +14,16 @@ public class MakeEdu {
     }
 
     private String solution(String input1, String input2) {
+        Queue<Character> q = new LinkedList<>();
+        for (char c : input1.toCharArray()) {
+            q.offer(c);
+        }
+
+        for (char c : input2.toCharArray()) {
+            if (q.poll()) {
+                q.
+            }
+        }
         return "YES";
     }
 }
