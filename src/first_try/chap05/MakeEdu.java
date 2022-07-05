@@ -11,6 +11,7 @@ public class MakeEdu {
         String input1 = sc.next();
         String input2 = sc.next();
         System.out.println(niam.solution(input1, input2));
+        System.out.println();
     }
 
     private String solution(String input1, String input2) {
