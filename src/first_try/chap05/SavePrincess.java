@@ -11,7 +11,9 @@ public class SavePrincess {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
+
         System.out.println(niam.solution(a, b));
+
     }
 
     private int solution(int a, int b) {
