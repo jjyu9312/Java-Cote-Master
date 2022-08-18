@@ -13,9 +13,6 @@ public class SavePrincess {
         int b = sc.nextInt();
 
         System.out.println(niam.solution(a, b));
-
-
-
     }
 
     private int solution(int a, int b) {
