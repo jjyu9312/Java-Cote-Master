@@ -56,6 +56,7 @@ public class Emergency {
             arr[i] = sc.nextInt();
         }
 
+
         System.out.println(niam.solution(n, m, arr));
     }
 }
