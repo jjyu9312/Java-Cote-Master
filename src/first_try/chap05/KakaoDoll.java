@@ -6,6 +6,7 @@ import java.util.Stack;
 public class KakaoDoll {
 
     public int solution(int[][] board, int[] moves) {
+
         int answer = 0;
 
         Stack<Integer> stack = new Stack<Integer>();
