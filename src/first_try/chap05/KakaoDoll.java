@@ -30,8 +30,6 @@ public class KakaoDoll {
         }
 
         return answer;
-
-
     }
 
     public static void main(String[] args) {
