@@ -15,6 +15,9 @@ public class SavePrincess {
         System.out.println(niam.solution(a, b));
 
 
+
+
+
     }
 
     private int solution(int a, int b) {
