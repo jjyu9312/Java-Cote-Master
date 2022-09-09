@@ -24,6 +24,8 @@ public class KakaoDoll {
                     } else {
                         stack.push(tmp);
                     }
+
+
                     break;
                 }
             }
