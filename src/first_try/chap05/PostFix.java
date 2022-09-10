@@ -19,5 +19,7 @@ public class PostFix {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         System.out.println(niam.solution(str));
+
+
     }
 }

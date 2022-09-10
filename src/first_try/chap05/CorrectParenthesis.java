@@ -22,6 +22,8 @@ public class CorrectParenthesis {
         if (!stack.isEmpty()) return "NO"; // 여는 괄호가 더 많음
 
         return "YES";
+
+
     }
 
     public static void main(String[] args) {
