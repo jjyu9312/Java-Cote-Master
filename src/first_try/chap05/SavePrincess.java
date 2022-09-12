@@ -28,8 +28,6 @@ public class SavePrincess {
             q.poll();
             if (q.size() == 1) answer = q.poll();
         }
-
-
         return answer;
     }
 }
