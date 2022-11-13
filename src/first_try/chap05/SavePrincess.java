@@ -25,9 +25,13 @@ public class SavePrincess {
 
         while (!q.isEmpty()) {
             for (int i = 1; i < b; i++) q.offer(q.poll()); // poll: 꺼내고 값을 return 받음
+
             q.poll();
+
             if (q.size() == 1) answer = q.poll();
         }
+
+
         return answer;
     }
 }
