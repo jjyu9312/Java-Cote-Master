@@ -13,6 +13,13 @@ public class SavePrincess {
         int b = sc.nextInt();
 
         System.out.println(niam.solution(a, b));
+        System.out.println(niam.solution(a, b));
+        System.out.println(niam.solution(a, b));
+        System.out.println(niam.solution(a, b));
+
+
+
+
     }
 
     private int solution(int a, int b) {
@@ -30,7 +37,6 @@ public class SavePrincess {
 
             if (q.size() == 1) answer = q.poll();
         }
-
 
         return answer;
     }
