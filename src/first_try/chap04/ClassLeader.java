@@ -18,6 +18,7 @@ public class ClassLeader {
 //        System.out.println(hashMap.containsKey("A"));
 
 
+
         int max = Integer.MIN_VALUE;
         for (char x : hashMap.keySet()) {
             if (hashMap.get(x) > max) {
@@ -36,4 +37,6 @@ public class ClassLeader {
         String candidate = sc.next();
         System.out.println(niam.solution(n, candidate));
     }
+
+
 }
