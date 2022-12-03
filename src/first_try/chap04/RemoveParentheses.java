@@ -29,7 +29,9 @@ public class RemoveParentheses {
         String str = sc.next();
 
         System.out.println("=====================");
+
         System.out.println(niam.solution(str));
+
         System.out.println("=====================");
     }
 }

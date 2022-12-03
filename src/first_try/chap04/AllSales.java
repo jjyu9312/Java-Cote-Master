@@ -25,7 +25,6 @@ public class AllSales {
             }
             return answer;
 
-            
     }
 
     public static void main(String[] args) {

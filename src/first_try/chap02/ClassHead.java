@@ -24,6 +24,7 @@ public class ClassHead {
         }
 
         return answer;
+
     }
 
     public static void main(String[] args) {
@@ -36,7 +37,9 @@ public class ClassHead {
                 arr[i][j] = sc.nextInt();
             }
         }
+        
         System.out.println(niam.solution(n, arr));
+
         System.out.println("=====================");
     }
 }
