@@ -16,7 +16,6 @@ public class Sosu {
                 for (int j = i; j < n; j=j+i) { // j는 i의 배수만큼 증가
                     ch[j] = 1;
 
-
                 }
             }
         }
@@ -28,8 +27,11 @@ public class Sosu {
         Sosu niam = new Sosu(); // 매서드 static이면 객체 생성 필요 없음.
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+
         System.out.println("=====================");
+
         System.out.println(niam.solution(n));
+
         System.out.println("=====================");
     }
 }

@@ -8,7 +8,9 @@ class Anagram {
         Anagram niam = new Anagram(); // 매서드 static이면 객체 생성 필요 없음.
         Scanner sc = new Scanner(System.in);
         String ana1 = sc.next();
+        
         String ana2 = sc.next();
+
         System.out.println(niam.solution(ana1, ana2));
     }
 
