@@ -11,9 +11,7 @@ public class FindWord {
         String[] str2 = str.split("");
 
         for (int i = 0; i < str2.length; i++) {
-            if (str2[i].equals("c")) {
-                answer += 1;
-            }
+            if (str2[i].equals("c")) answer += 1;
         }
 
         return answer;
