@@ -24,9 +24,8 @@ public class Emergency {
         int answer = 0;
         Queue<Person> q = new LinkedList<>();
 
-        for (int i = 0; i < n; i++) {
-            q.offer(new Person(i ,arr[i])); // queue에 Emergency 객체를 넣어줌
-        }
+        // queue에 Emergency 객체를 넣어줌
+        for (int i = 0; i < n; i++) q.offer(new Person(i ,arr[i]));
 
         while (!q.isEmpty()) {
             Person emg = q.poll(); // q에서 꺼내 emg에 위치
@@ -55,7 +54,6 @@ public class Emergency {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-
 
         System.out.println(niam.solution(n, m, arr));
     }

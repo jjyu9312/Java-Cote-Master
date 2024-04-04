@@ -28,18 +28,12 @@ public class Q1010 {
 
     private static int combination(int n, int r) {
         // 이미 계산된 값일 경우
-        if (dp[n][r] > 0) {
-            return dp[n][r];
-        }
+        if (dp[n][r] > 0) return dp[n][r];
 
         // 원소의 갯수가 조합의 갯수와 동일하거나 0일 경우
-        else if (n == r || r == 0) {
-            return dp[n][r] = 1;
-        }
+        else if (n == r || r == 0) return dp[n][r] = 1;
 
         // 일반적인 경우
-        else {
-            return dp[n][r] = combination(n - 1, r - 1) + combination(n - 1, r);
-        }
+        else return dp[n][r] = combination(n - 1, r - 1) + combination(n - 1, r);
     }
 }
