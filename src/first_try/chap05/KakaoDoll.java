@@ -17,8 +17,10 @@ public class KakaoDoll {
                 if (board[i][pos - 1] != 0) {
                     int tmp = board[i][pos - 1];
 //                    System.out.println("tmp : " + tmp);
-                    board[i][pos - 1] = 0; // 인형 가져오고 없애기
-                    if (!stack.isEmpty() && tmp == stack.peek()) { // peek : Stack의 top에 있는 item을 삭제하지않고 해당 item을 반환
+                    // 인형 가져오고 없애기
+                    board[i][pos - 1] = 0;
+                    // peek : Stack의 top에 있는 item을 삭제하지않고 해당 item을 반환
+                    if (!stack.isEmpty() && tmp == stack.peek()) {
                         answer += 2;
                         stack.pop();
                     } else {
@@ -44,7 +46,8 @@ public class KakaoDoll {
         }
         int m = sc.nextInt();
         int[] moves = new int[m];
-        for (int k = 0; k < m; k++) moves[k] = sc.nextInt();
+        for (int k = 0; k < m; k++)
+            moves[k] = sc.nextInt();
         System.out.println(niam.solution(board, moves));
     }
 }
