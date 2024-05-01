@@ -8,8 +8,7 @@ import java.util.Stack;
 public class CorrectParenthesis {
 
     public String solution(String str) {
-
-        Stack<Character> stack = new Stack<Character>();
+        Stack<Character> stack = new Stack<>();
 
         for (char x : str.toCharArray()) {
             if (x == '(') stack.push(x);
@@ -22,8 +21,6 @@ public class CorrectParenthesis {
         if (!stack.isEmpty()) return "NO"; // 여는 괄호가 더 많음
 
         return "YES";
-
-
     }
 
     public static void main(String[] args) {
